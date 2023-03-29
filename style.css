@@ -5,12 +5,22 @@
 
 body {
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
+}
+.container {
+    padding: 10px;
+}
+.hero_image_container {
+    width: 100%;
+}
+.hero_image {
+    width: 100%;
 }
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: aliceblue;
 }
 .navbar__brand {
     width: 100px;
@@ -18,7 +28,7 @@ body {
 .nav_logo {
     width: 100%;
 }
-.navbar__item {
+.button__item {
     color: #fff;
    background-image: linear-gradient(
     to right, 
@@ -40,6 +50,13 @@ body {
     .navbar {
         padding: 10px 20px;
     }
+
+    .hero_container {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
 }
 @media (min-width: 1024px) {
     .navbar__brand {
@@ -50,4 +67,24 @@ body {
         font-size: 20px;
         font-weight: 500;
     }
+}
+
+.hero_container {
+    margin-top: 20px;
+}
+
+.hero_description {
+    padding: 10px;
+}
+
+.hero_text {
+    color: #1A5F7A;
+    font-size: 210%;
+    margin: 20px;
+    font-weight: 1000;
+}
+
+.hero_image {
+    border-radius: 6px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 40%);
 }

@@ -17,16 +17,53 @@ body {
     width: 100%;
 }
 .navbar {
+    background-color: aliceblue;
+    padding: 0px 20px 0px 20px;
+}
+.navbar_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aliceblue;
+   
 }
 .navbar__brand {
     width: 100px;
 }
 .nav_logo {
     width: 100%;
+}
+
+.nav_input {
+    padding: 0px 20px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+.input_bar {
+    margin: 10px;
+    border: 1px solid #ee89a0;
+    background-color: #fcedf0;
+    color: #1d3557;
+    font-weight: 700;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+}
+.input_bar:hover {
+    border: 2px solid #ee89a0;
+}
+.button__input {
+    border: none;
+    border-radius: 6px;
+    width: 150px;
+    padding: 10px;
+    cursor: pointer;
+}
+.button__input:hover {
+    border: 2px solid;
+}
+
+.navbar__items {
+    width: 150px;
 }
 .button__item {
     color: #fff;
@@ -37,32 +74,43 @@ body {
     #ff512f 100%
    );
     border: none;
-    padding: 12px;
+    padding: 10px;
     border-radius: 6px;
     cursor: pointer;
+    width: 150px;
 }
 
-.navbar__item:hover {
+.button__item:hover {
     border: 2px solid #dd2476;
 }
 
-@media (min-width: 768px) {
-    .navbar {
-        padding: 10px 20px;
-    }
+.explore_menu_list {
+    margin: 20px;
+    padding: 10px;
+}
 
+@media (min-width: 768px) {
     .hero_container {
         margin-top: 20px;
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
     }
+
+    .explore_menu_list {
+        display: flex;
+        margin-top: 40px;
+    }
+    #pizza_card {
+        margin-top: -20px;
+        margin-bottom: 30px;
+    }
 }
 @media (min-width: 1024px) {
     .navbar__brand {
-        width: 150px;
+        width: 200px;
     }
-    .navbar__item {
+    .button__item {
         padding: 10px;
         font-size: 20px;
         font-weight: 500;
@@ -87,4 +135,33 @@ body {
 .hero_image {
     border-radius: 6px;
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 40%);
+}
+
+@media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+        margin: 0 auto;
+    }
+    
+}
+
+.explore_text {
+    margin: 20px;
+    text-align: center;
+    color: #1A5F7A;
+    font-size: 30px;
+}
+.food_card_image_container {
+    width: 100%;
+}
+.food_card_image {
+    width: 100%;
+    border-radius: 6px;
+    height: 300px;
+}
+.food_card {
+    margin: 10px;
+}
+.food_card_description {
+    padding: 10px;
 }

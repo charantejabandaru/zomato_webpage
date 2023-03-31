@@ -12,11 +12,17 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar__brand">
-                <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt="LOGO" class="nav_logo">
+            <div class="navbar_container">
+                <div class="navbar__brand">
+                    <img src="https://1000logos.net/wp-content/uploads/2021/06/Zomato-logo.png" alt="LOGO" class="nav_logo">
+                </div>
+                <div class="navbar__items">
+                    <button class="button__item">order food</button>
+                </div>
             </div>
-            <div class="navbar__items">
-                <button class="button__item">order food</button>
+            <div class="nav_input">
+                <input type="text" placeholder="search restaurants near you" class="input_bar">
+                <button class="button__input">search</button>
             </div>
         </nav>
     </header>
@@ -29,6 +35,38 @@
                 <h1 class="hero_text">order food from favourite restaurants near you</h1>
                 <button class="button__item">order now</button> 
             </div>
+        </section>
+        <section class="explore_menu_container">
+                <h1 class="explore_text">Explore Our Menu</h1>
+                <div class="explore_menu_list">
+                    <div class="food_card">
+                        <div class="food_card_image_container">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/2/97262/a153257d68de3a60406ac31c98f39ccc_o2_featured_v2.jpg" alt="food card" class="food_card_image">
+                        </div>
+                        <div class="food_card_description">
+                            <h3 class="food_card_title">Burger</h3>
+                            <p>Burger King, Mcdonalds, Burger Place <span style="color: crimson;">+3</span></p>
+                        </div>
+                    </div>
+                    <div class="food_card" id="pizza_card">
+                        <div class="food_card_image_container">
+                            <img src="https://b.zmtcdn.com/data/pictures/chains/0/1400070/978a3b81db3e9474fceabecd1efa00f5.jpg" alt="food card" class="food_card_image">
+                        </div>
+                        <div class="food_card_description">
+                            <h3 class="food_card_title">Pizza</h3>
+                            <p>Pizza Hut, Domino's Pizza <span style="color: crimson;">+3</span></p>
+                        </div>
+                    </div>
+                    <div class="food_card">
+                        <div class="food_card_image_container">
+                            <img src="https://d1ralsognjng37.cloudfront.net/efe3d7eb-ba0b-4751-b1dc-437fdbb40ff6.jpeg" alt="food card" class="food_card_image">
+                        </div>
+                        <div class="food_card_description">
+                            <h3 class="food_card_title">Ice Creams</h3>
+                            <p>Baskin Robins, Ibaco <span style="color: crimson;">+3</span></p>
+                        </div>
+                    </div>
+                </div>
         </section>
 
     </main>

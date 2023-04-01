@@ -97,6 +97,25 @@ body {
         align-items: center;
     }
 
+    .explore_menu_container {
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .explore_menu_gradient_bg {
+        position: absolute;
+        background-image: linear-gradient(
+            to right, 
+            #ff512f 0%,
+            #dd2476 50%,
+            #ff512f 100%
+           );
+           top: 0;
+           width: 100%;
+           height: 100%;
+           z-index: -3;
+           transform: skewY(-5deg);
+    }
     .explore_menu_list {
         display: flex;
         margin-top: 40px;
